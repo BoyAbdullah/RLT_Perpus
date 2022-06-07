@@ -1,5 +1,43 @@
 {% extends 'base_login.html' %}
 
 {% block content %}
-welcome login
+    <div class="login-box animation__shake">
+        <div class="card card-outline card-primary">
+            <div class="card-header text-center">
+                <a href="{{ url_for('perpus.index') }}" class="h1">PERPUSTAKAAN</a>
+            </div>
+            <div class="card-body">
+                <p class="login-box-msg">Sign in to start your session</p>
+
+                <form role="form" method="post" action="{{ url_for('perpus.sign_in') }}">
+                    <div class="input-group mb-3">
+                        <input type="username" id="username" name="username"
+                               class="form-control" placeholder="Username"
+                               value="{{ request.form.username }}">
+                        <div class="input-group-append">
+                            <div class="input-group-text">
+                                <span class="fas fa-user-tie"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="input-group mb-3">
+                        <input type="password" id="password" name="password"
+                               class="form-control" placeholder="Password"
+                               value="{{ request.form.password }}">
+                        <div class="input-group-append">
+                            <div class="input-group-text">
+                                <span class="fas fa-lock"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-8"></div>
+                        <div class="col-4">
+                            <button type="submit" class="btn btn-primary btn-block">Sign In</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
 {% endblock %}

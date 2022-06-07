@@ -21,7 +21,8 @@ def sign_in():
     try:
 
         if request.method == "POST":
-            pass
+            usr = request.form['username']
+            pwd = request.form['password']
 
         return render_template('authorize/signin.html')
     except Exception as e:
