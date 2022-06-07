@@ -1,0 +1,157 @@
+/*# region For all */
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+}
+
+.blink_me {
+    animation: blinker 2s linear infinite;
+}
+/*# endregion */
+/*# region For main.html */
+.headland {
+    background-color: #343a40;
+    border-color: #4b545c;
+    color: #869099;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    height: 150px;
+    padding: 0em 1em 1em 1em;
+    z-index: 999;
+}
+.headland > .headcontent {
+  margin-top: -4px;
+  position: absolute;
+  left: 10px;
+  top: 30%;
+}
+.headland > .float-right {
+  margin-top: -4px;
+  position: absolute;
+  right: 10px;
+  top: 30%;
+}
+
+.footland {
+    background-color: #343a40;
+    border-color: #4b545c;
+    color: #869099;
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0.1em;
+    height: 2em;
+    padding: 0;
+    font-size: 2em;
+    line-height: 1;
+    z-index: 999;
+}
+.footcontent {
+  display: inline-block;
+  white-space: nowrap;
+  animation: floatText 15s infinite linear;
+  padding-left: 100%; /*Initial offset*/
+}
+.footcontent:hover {
+  animation-play-state: paused;
+}
+@keyframes floatText {
+  to {
+    transform: translateX(-100%);
+  }
+}
+.footland > .footcontent {
+  position: absolute;
+  left: 10px;
+  top: 30%;
+}
+.footland > .float-right {
+    font-size: 0.8em;
+    position: absolute;
+    right: 10px;
+    top: 30%;
+}
+
+.pray-body {
+
+}
+.pray-card > .card-header {
+    background-color: #3f6791;
+}
+.pray-active > .card-header {
+    background-color: #f39c12;
+}
+.pray-title {
+    text-align: center !important;
+    font-size: 1.5em !important;
+    float: none !important;
+}
+.pray-clock {
+    text-align: center !important;
+    font-size: 2em !important;
+    padding: 0rem !important;
+}
+
+.mosque-logo {
+    font-size: 4rem !important;
+    text-align: center !important;
+    align-self: center !important;
+}
+.mosque-name {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif !important;
+    font-size: 2.5rem !important;
+    text-align: center !important;
+}
+.mosque-addrs {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif !important;
+    font-size: 1.5rem !important;
+    text-align: center !important;
+}
+.on-time {
+    font-family: 'Operator Mono', 'Source Code Pro', Menlo, Monaco, Consolas, Courier New, monospace !important;
+    font-size: 2.5rem !important;
+    text-align: right !important;
+}
+.on-date {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif !important;
+    font-size: 1rem !important;
+    text-align: right !important;
+}
+
+/*.pray-content {*/
+/*    top: 300px;*/
+/*    position: relative;*/
+/*    z-index: 9;*/
+/*}*/
+.incard {
+    flex-basis: fit-content;
+}
+.streamvid {
+    width: 100vw;
+    height: 72vh;
+}
+
+/*# endregion */
+/*# region For pray_count.html */
+.pray-content {
+    position: fixed;
+    top: 19%;
+    /*left: 50%;*/
+    /*transform: translate(-50%, -50%);*/
+    z-index: 9;
+}
+.pray-count {
+    font-size: 7em;
+    text-align: center;
+}
+.pray-name {
+    font-size: 3em;
+    text-align: center;
+    width: max-content;
+}
+/*# endregion */
+
+

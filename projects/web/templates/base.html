@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>PERPUSTAKAAN</title>
+
+    {% block head_collect %}{% include 'head_collect.html' %}{% endblock %}
+
+</head>
+<body class="hold-transition dark-mode sidebar-mini layout-fixed layout-navbar-fixed layout-footer-fixed pray-body">
+
+<div class="wrapper">
+
+    <!-- Preloader -->
+    <div class="preloader flex-column justify-content-center align-items-center">
+        <img class="animation__wobble" src="../static/assets/dist/img/AdminLTELogo.png" alt="PERPUS" height="60" width="60">
+    </div>
+
+    {% block content %}{% endblock %}
+
+</div>
+
+    {% block foot_collect %}{% include 'foot_collect.html' %}{% endblock %}
+
+</body>
+</html>

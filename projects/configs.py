@@ -14,6 +14,7 @@ def create_new():
         'debug': 'true'
         , 'host': '0.0.0.0'
         , 'port': '300'
+        , 'base_api': 'http://localhost:300'
         , 'secret_key': '`?.RytechIndo.?'
         , 'session_cookie_name': 'RLT_PERPUS'
         , 'allowed_image_extensions': ['JPEG', 'JPG', 'JPG', 'GIF']
